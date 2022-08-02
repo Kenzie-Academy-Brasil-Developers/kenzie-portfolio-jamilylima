@@ -20,6 +20,51 @@ interface ReposType {
   homepage: string;
 }
 
+
+const projetos = [
+
+  {
+    name:"HamburgerKenzie",
+    language: "JavaScript",
+    description: "Hamburgueria",
+    git_url:"https://github.com/jamilylima/Hamburger-kenzie",
+    homepage:"https://react-entrega-s1-hamburgueria-da-kenzie-jamilylima.vercel.app/",
+
+  },
+  {
+    name:"NuKenzie",
+    language: "JavaScript",
+    description: "Financial management",
+    git_url:"https://github.com/jamilylima/NuKenzie",
+    homepage:"https://react-entrega-s1-nu-kenzie-jamilylima.vercel.app/",
+
+  },
+  {
+    name:"KenzieHub",
+    language: "JavaScript",
+    description: "Hamburgueria",
+    git_url:"https://github.com/jamilylima/kenziehub",
+    homepage:"https://react-entrega-s1-hamburgueria-da-kenzie-jamilylima.vercel.app/",
+
+  },
+  {
+  name:"Form in react",
+  language: "JavaScript",
+  description: "registration form in react/ Validation with yup",
+  git_url: "https://github.com/jamilylima/registration-form-",
+  homepage:" https://react-entrega-s2-formulario-de-cadastro-jamilylima.vercel.app/",
+  },
+  {
+    name:"kenzieShop",
+    language: "JavaScript",
+    description: "redux",
+    git_url: "https://github.com/jamilylima/kenzieshop",
+    homepage:" https://react-entrega-s3-kenzieshop-jamilylima.vercel.app/",
+
+  },
+
+]
+
 export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
 
@@ -44,7 +89,7 @@ export const Project = (): JSX.Element => {
 
   return (
     <>
-      {repositories?.map((repository) => (
+      {projetos?.map((repository) => (
         <ProjectWrapper key={repository.id}>
           <Text
             as="h2"
