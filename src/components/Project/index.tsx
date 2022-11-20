@@ -40,27 +40,34 @@ const projetos = [
 
   },
   {
-    name:"KenzieHub",
+    name:"Tests-postgreSQL",
     language: "JavaScript",
-    description: "Hamburgueria",
-    git_url:"https://github.com/jamilylima/kenziehub",
-    homepage:"https://react-entrega-s1-hamburgueria-da-kenzie-jamilylima.vercel.app/",
-
+    description: "",
+    git_url:"https://github.com/jamilylima/Tests-postgreSQL",
   },
   {
-  name:"Form in react",
-  language: "JavaScript",
-  description: "registration form in react/ Validation with yup",
-  git_url: "https://github.com/jamilylima/registration-form-",
-  homepage:" https://react-entrega-s2-formulario-de-cadastro-jamilylima.vercel.app/",
+    name:"CRUD",
+    language: "TypeScript",
+    description: "CRUD-TypeORM-PostgreSQL-",
+    git_url:"https://github.com/jamilylima/CRUD-TypeORM-PostgreSQL-",
   },
   {
-    name:"kenzieShop",
-    language: "JavaScript",
-    description: "redux",
-    git_url: "https://github.com/jamilylima/kenzieshop",
-    homepage:" https://react-entrega-s3-kenzieshop-jamilylima.vercel.app/",
-
+    name:"Book-Klub",
+    language: "TypeScript",
+    description: "Participação do projeto Book Klub. É uma plataform virtual de clubes de livros, onde leitores podem se cadastrar, criar seus próprios clubes e agendar sessões de discussão sobre a obra que estão lendo. Todos os usuários cadastrados podem criar e administrar seus próprios clubes, e outros usuários podem ingressar em clubes existentes.",
+    git_url:"https://github.com/Book-Klub/book-klub",
+  },
+  {
+    name:"from-kontent",
+    language: "Python",
+    description: "CRUD com Django e Django Rest Framework",
+    git_url:"https://github.com/jamilylima/from-kontent",
+  },
+  {
+    name:"School API",
+    language: "Python",
+    description: "Participação do projeto School API. Está API foi criada com a linguagem python e o framework DJANGO. API simula o funcionamento de uma escola, podendo ser inseridos dados como matérias, professores, turmas e alunos e com esses dados criar determinados exames para essas matérias.Exames os quais o professor poderá atribuir uma nota para cada aluno, nota esta que será atualizada no boletim final do aluno.",
+    git_url:"https://github.com/ReinhardtMGMT/m5project",
   },
 
 ]
@@ -90,7 +97,7 @@ export const Project = (): JSX.Element => {
   return (
     <>
       {projetos?.map((repository) => (
-        <ProjectWrapper key={repository.id}>
+        <ProjectWrapper>
           <Text
             as="h2"
             type="heading3"
